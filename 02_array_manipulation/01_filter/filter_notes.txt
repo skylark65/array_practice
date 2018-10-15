@@ -1,0 +1,14 @@
+You can use the filter() method to remove items from an array. 
+
+Filter doesn't affect the original array. Instead, it returns a new array. In this case, a new array will be returned containing the items you DO NOT want removed.
+
+Use filter by passing a callback function into the filter() method. The callback is simply a function that should return either true or false:
+
+let array = ['A', 'B', 'C'];
+
+array.filter((item, index) => {
+  return letter !== 'B';
+})
+
+Result:
+['A', 'C']
