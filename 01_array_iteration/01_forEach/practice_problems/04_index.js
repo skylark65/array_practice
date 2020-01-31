@@ -6,6 +6,16 @@ const names = ['Selma', 'Ted', 'Mike', 'Sam', 'Sharon', 'Marvin'];
 
 names.forEach((name, index) => console.log(`${index + 1}: ${name}`));
 
+let namesWithS = [];
+names.forEach((name, index, arr) => {
+    if (name.startsWith('S')) {
+        arr[index] = name;
+    }
+});
+console.log(names);
+
+
+
 /* ------------------------------------------------------------
 Notes: 
 

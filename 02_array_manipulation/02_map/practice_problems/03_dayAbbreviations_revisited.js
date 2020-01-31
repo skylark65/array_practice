@@ -11,3 +11,9 @@ Hint:
 Recall the slice() method.
 ------------------------------------------------------------ */
 const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+const convertDays = daysOfWeek.map((dayOfWeek) => {
+  return dayOfWeek.slice(0,3)
+})
+
+console.log(convertDays)

@@ -13,3 +13,15 @@ fruits.forEach(fruit => {
 console.log(capitalizedFruits);
 ------------------------------------------------------------ */
 const fruits = ['apple', 'pear', 'orange', 'cherry'];
+
+const capitalizedFruits = fruits.map((fruit, index) => {
+  console.log(index)
+  return fruit.charAt(0).toUpperCase() + fruit.substring(1);
+});
+
+console.log(capitalizedFruits)
+
+/*
+let roots = numbers.map(function(num) {
+  return Math.sqrt(num)
+*/

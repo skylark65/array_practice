@@ -12,3 +12,7 @@ prices.forEach(price => total += price);
 console.log(total);1
 ------------------------------------------------------------ */
 const prices = [6.75, 3.10, 4.00, 8.12];
+
+const total= prices.reduce((sum,price) => 
+sum + price, 0) 
+console.log(total);1
